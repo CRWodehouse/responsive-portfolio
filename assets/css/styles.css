@@ -1,0 +1,197 @@
+html {
+  box-sizing: border-box;
+	}
+	*, *:before, *:after {
+  box-sizing: inherit;
+	}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+.section::before,
+.section::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+	background-image: url("../images/regal.png");
+	}
+
+p {
+	color: #777777;
+}
+/*Section which holds paragraph and image*/
+.section {
+	width: 650px;
+	background-color: #ffffff;
+	border-style: solid;
+	border-color: #dddddd;
+	padding: 20px 20px 20px 20px;
+/*	margin: 0px auto;*/
+	float: left;
+	}
+
+.section > h1 {
+	color: #4aaaa5;
+}
+
+.section > img {
+	width: 40%;
+	float: left;
+}
+
+.imageSection {
+	width: 200px;
+}
+
+.g {
+	width: 270px;
+	background-color: #CC0066;
+	padding: 20px 20px 20px 20px;
+	background-color: #ffffff;
+	border-style: solid;
+	border-color: #dddddd;
+	float: right;
+	}
+
+.g > h1 {
+	text-align: center
+	color: #4aaaa5;
+}
+
+.g > li {
+	display: inline-block;
+	padding: 0 25px 0 25px;
+}
+
+/*Navigation*/
+.nav {
+	background-color: #ffffff;
+	text-align: right;
+	list-style: none;
+	text-transform: uppercase;
+	padding: 20px 20px 20px 20px;
+	width: 100%;
+}
+
+.nav > li {
+	display: inline-block;
+	padding: 0 25px 0 25px;
+}
+
+.nav > li > a {
+	text-decoration: none;
+	color: grey;
+}
+
+footer {
+	clear: both;
+	background-color: #cc0066;
+	text-align: center;
+	border-style: solid;
+	border-bottom: 10px;
+	border-left: none;
+	border-right: none;
+	border-color: #4aaaa5;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 20px;
+	width: 100%;
+	padding-bottom:15px;
+}
+
+.wrapper {
+}
+
+.gallery {
+	display: flex;
+	flex-wrap:  wrap;
+	width: 650px;
+	background-color: #ffffff;
+	border-style: solid;
+	border-color: #dddddd;
+	padding: 20px 20px 20px 20px;
+/*	margin: 0px auto;*/
+	}
+}
+
+.imageSection {
+	width: 100px;
+	height: 100px;
+}
+
+.imageSection img {
+	height: 100%;
+	width: 100%;
+}
+
+.description {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	/*padding: 15px;*/
+	text-align: center;
+	position: relative;
+	bottom: 40px;
+	width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+	.container {
+		max-width: 980px;
+	}
+	
+	.section {
+		width: 100%;
+	}
+
+	.g {
+		width: 100%;
+	}
+
+	.imagesection {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+	.section {
+		width: 100%;
+	}
+	.g {
+		width: 100%;
+	}
+	.imagesection {
+		width: 47%;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+	.section {
+		width: 100%;
+	}
+	.g {
+		width: 100%;
+	}
+	.imagesection {
+		width: 100px;
+	}
+}
