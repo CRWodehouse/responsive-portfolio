@@ -112,9 +112,6 @@ footer {
 	padding-bottom:15px;
 }
 
-.wrapper {
-}
-
 .gallery {
 	display: flex;
 	flex-wrap:  wrap;
